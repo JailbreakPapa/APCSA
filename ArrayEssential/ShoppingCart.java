@@ -31,6 +31,7 @@ public class ShoppingCart {
         
         // Replace old array with new array
         cart = temp;
+        this.capacity = temp.length;
     }
     
     public double getTotalPrice() {
@@ -43,10 +44,10 @@ public class ShoppingCart {
     
     @Override
     public String toString() {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (int i = 0; i < itemCount; i++) {
-            result += cart[i].toString() + "\n";
+            result.append(cart[i].toString()).append("\n");
         }
-        return result;
+        return result.toString();
     }
 }

@@ -27,6 +27,6 @@ public class Item {
     
     @Override
     public String toString() {
-        return name + " @ $" + price + " x " + quantity + " = $" + getTotalPrice();
+        return String.format("%s @ $%.2f x %d = $%.2f", name, price, quantity, getTotalPrice());
     }
 }
