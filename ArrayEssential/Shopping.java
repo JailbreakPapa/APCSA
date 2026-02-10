@@ -18,7 +18,7 @@ public class Shopping {
             
             System.out.print("Enter the quantity: ");
             int quantity = scanner.nextInt();
-            scanner.nextLine(); // Consume the newline
+            scanner.nextLine();
             
             Item item = new Item(name, price, quantity);
             cart.addToCart(item);
@@ -35,3 +35,60 @@ public class Shopping {
         scanner.close();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

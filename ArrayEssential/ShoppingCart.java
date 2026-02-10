@@ -20,16 +20,21 @@ public class ShoppingCart {
         itemCount++;
     }
     
+    public void addToCart(String itemName, double price, int quality)
+    {
+        if (itemCount >= cart.length) {
+            increaseSize();
+        }
+        Item temp = new Item(itemName,price,quality);
+        cart[itemCount] = temp;
+        totalPrice += price;
+        itemCount++;
+    }
     private void increaseSize() {
-        // Create a new array with size increased by 3 elements
         Item[] temp = new Item[cart.length + 3];
-        
-        // Copy existing items to the new array
         for (int i = 0; i < cart.length; i++) {
             temp[i] = cart[i];
         }
-        
-        // Replace old array with new array
         cart = temp;
         this.capacity = temp.length;
     }
