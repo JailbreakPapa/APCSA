@@ -51,24 +51,6 @@ public class PictureTester
     swan.explore();
   }
   
-  /** Method to test mirrorHorizontalBotToTop */
-  public static void testMirrorHorizontalBotToTop()
-  {
-    Picture caterpillar = new Picture("caterpillar.jpg");
-    caterpillar.explore();
-    caterpillar.mirrorHorizontalBotToTop();
-    caterpillar.explore();
-  }
-  
-  /** Method to test mirrorDiagonal */
-  public static void testMirrorDiagonal()
-  {
-    Picture beach = new Picture("beach.jpg");
-    beach.explore();
-    beach.mirrorDiagonal();
-    beach.explore();
-  }
-  
   /** Method to test mirrorVerticalRightToLeft */
   public static void testMirrorVerticalRightToLeft()
   {
@@ -85,6 +67,24 @@ public class PictureTester
     redMotorcycle.explore();
     redMotorcycle.mirrorHorizontal();
     redMotorcycle.explore();
+  }
+  
+  /** Method to test mirrorHorizontalBotToTop */
+  public static void testMirrorHorizontalBotToTop()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorHorizontalBotToTop();
+    caterpillar.explore();
+  }
+  
+  /** Method to test mirrorDiagonal */
+  public static void testMirrorDiagonal()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.mirrorDiagonal();
+    beach.explore();
   }
   
   /** Main method for testing.  Every class can have a main
