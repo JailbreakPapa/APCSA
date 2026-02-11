@@ -107,8 +107,8 @@ public class PictureTester
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorHorizontal();
-    //testMirrorHorizontalBotToTop();
-    //testMirrorDiagonal();
+    testMirrorHorizontalBotToTop();
+    testMirrorDiagonal();
     //testCollage();
     //testCopy();
     //testEdgeDetection();
