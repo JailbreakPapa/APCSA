@@ -257,7 +257,9 @@ public class Picture extends SimplePicture
     }
   }
   
-
+  /** Method that mirrors the picture around a 
+    * horizontal mirror placed at the middle of the height of the picture
+    * from bottom to top */
   public void mirrorHorizontalBotToTop()
   {
     Pixel[][] pixels = this.getPixels2D();
@@ -275,6 +277,8 @@ public class Picture extends SimplePicture
     }
   }
   
+  /** Method that mirrors the picture around a diagonal line
+    * from bottom left to top right */
   public void mirrorDiagonal()
   {
     Pixel[][] pixels = this.getPixels2D();
@@ -293,7 +297,7 @@ public class Picture extends SimplePicture
     }
   }
   
-  public static void main(String[] args) 
+  public static void main(String[] args)
   {
     Picture beach = new Picture("beach.jpg");
     beach.explore();
